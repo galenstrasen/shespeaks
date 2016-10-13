@@ -1,0 +1,701 @@
+//
+// .lav-bg { background-color: $lavender; }
+// .lime-bg { background-color: $lime; }
+// .pink-bg { background-color: $pink; }
+// .purp-bg { background-color: $purp; }
+// .aqua-bg { background-color: $aqua; }
+// .peach-bg { background-color: $peach; }
+
+// .container-flex {
+//   background: $white;
+//   background: $black;
+//   // padding: 10px;
+//   // margin: 45px auto;
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding: 5px;
+//   // border-radius: 3px;
+//   // box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+// }
+
+// .item {
+//   color: $white;
+//   background-color: $pink;
+//   margin: 5px;
+//   border-radius: 1px;
+//   padding: 10px;
+// }
+
+
+// // FLEX
+
+// .container-flex {
+//   // display: flex; // establish flex formatting context - children automatically become flex items - block level
+//   // //display: inline-flex; // no longer block element
+//   // //height: 200px;
+
+//   // flex-direction: row; // default value
+//   // // flex-direction: row-reverse;
+//   // // flex-direction: column;
+//   // // flex-direction: column-reverse;
+
+//   // flex-wrap: wrap; // control if wrap single or multiline (wrap in direction of main axis)
+//   // // * flex wrap with flex-direction column is cool if height of container is too short.
+
+//   // // justify-content: flex-start; // default -  distributes available space
+//   // justify-content: flex-end;
+//   // justify-content: center;
+//   // justify-content: space-between; // <-- whoa
+//   //justify-content: space-around;
+// }
+
+// // .item-1 {
+// //   //margin-right: auto; // * browser inserts extra space to right (makes it easy to right align 1 or 2 items)
+
+// // }
+
+// // .item-6 {
+// //   // * default order = 0
+// //   // order: -1; //moves item to front
+// // }
+
+
+// // .item {
+// //   flex-grow: 0; //default - do not expand
+// //   flex-grow: 1; // fill container;
+// // }
+
+// // .item-3 {
+// //   flex-grow: 3;
+// // }
+
+
+// // .container-flex {
+// //   display: flex;
+// //   //flex-wrap: wrap;
+// //   //height: 450px;
+// //   //align-items: stretch; // = default
+// //   // align-items: flex-start; // dont stretch to height (start at top left)
+// //   // align-items: flex-end; // packs items to end
+// //   // align-items: center; //<== YES
+// //   min-height: 50vh;
+// // }
+
+// // .item {
+// //   //flex: 1;
+// //   //flex-grow: 1;
+// //   //flex-basis: 200px; // works with flex-grow - 200px or wider (when less than 200 - browser redistrubutes)
+
+// //   //*! use shorthand
+// //   // flex-shorthand (flex grow / flex basis & flex-shrink )
+// //   // flex: 1; // flex grow = 1 & flex basis = 0;
+// //   // flex: 1 200px;
+// // }
+
+// // .item-1 {
+// //   //align-self: flex-end;
+// // }
+// // .item-2 {
+// //   //flex: 2;
+// // }
+
+
+// // .container-flex {
+// //   display: flex;
+// //   flex-direction: column;
+// //   //flex-direction: row;
+// //   //min-height: 50vh;
+
+// //   //justify-content: center;
+// //   //align-items: center; // perfectly centered
+// // }
+
+// // .item {
+// //   //align-self: center;
+// //   //margin: auto; //<== wild - this vertically aligns...
+// // }
+
+
+
+// .container-flex {
+//   display: flex;
+//   //min-height: 300px;
+//   //min-height: 1600px;
+// }
+
+// .item-col {
+//   flex: 1 450px;
+//   display: flex;
+//   flex-direction: column;
+//   margin: 5px;
+//   &.left{ background: aqua; }
+//   &.right { background: $aqua;}
+// }
+
+
+// .item-col .sub {
+//   background: $peach;
+//   min-height: 400px;
+//   flex-grow: 1;
+//   margin: 5px 0;
+//   position: relative;
+//   .img {
+//     max-width: 100%;
+//     height: auto;
+//   }
+//   // .caption {
+//   //   display: absolute;
+//   //   bottom: 0;
+//   //   left: 0;
+//   //   width: 100%;
+//   //   padding: 15px;
+//   //   background: $aqua;
+//   // }
+//   &.grow2 {
+//     flex-grow: 2;
+//   }
+//   &.-white {
+//     background: $white;
+//     display: flex;
+
+//   }
+// }
+
+// .white-wrap {
+//   margin: auto;
+//   padding: 80px;
+//   text-align: center;
+//   // @include absolute($t:0,$l:0);
+//   // width: 100%;
+// }
+
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.6;
+  color: #3a3a3a;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  font-size: .95em;
+  margin-bottom: 1.8em;
+}
+h2,
+h3,
+a {
+  color: #093a58;
+}
+h2,
+h3 {
+  margin-top: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+  font-size: 1.35em;
+  margin: 0;
+}
+.main-nav {
+  margin-top: 5px;
+}
+.name a,
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+.main-nav a {
+  font-size: .95em;
+  color: #3acec2;
+  text-transform: uppercase;
+}
+.main-nav a:hover {
+  color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+.banner,
+.main-footer {
+  text-align: center;
+}
+.banner {
+  color: #fff;
+  background: #3acec2;
+  padding: 3.2em 0;
+  margin-bottom: 48px;
+}
+.col {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.main-footer {
+  background: #d9e4ea;
+  padding: 2em 0;
+  margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+  width: 190px;
+}
+.headline {
+  margin-bottom: 0;
+}
+.feat-img {
+  border-radius: 5px;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  .main-header,
+  .row {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .tagline {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 1025px) {
+  .main-header,
+  .row {
+    width: 80%;
+    max-width: 1150px;
+  }
+}
+/* =================================
+  Media Queries
+==================================== */
+.example1 {
+@media (min-width: 769px) {
+
+  .main-header,
+  .main-nav,
+  .row {
+    display: flex;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col {
+    flex: 1 50%;
+  }
+
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .secondary {
+    order: -1;
+  }
+}
+
+@media (min-width: 1025px) {
+
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .col {
+    flex-basis: 0;
+  }
+
+  .primary {
+    flex-grow: 1.4;
+  }
+
+
+
+}
+
+}
+
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.6;
+  color: #3a3a3a;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  font-size: .95em;
+  margin: 0 0 1em 0;
+}
+h2,
+h3,
+a {
+  color: #093a58;
+}
+h2,
+h3 {
+  margin: 0 0 .8em 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+  font-size: 1.35em;
+  margin: 0;
+}
+.main-nav {
+  margin-top: 5px;
+}
+.name a,
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+.main-nav a {
+  font-size: .95em;
+  color: #3acec2;
+  text-transform: uppercase;
+}
+.main-nav a:hover {
+  color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+.banner,
+.main-footer {
+  text-align: center;
+}
+.banner {
+  color: #fff;
+  background: #3acec2;
+  padding: 3.2em 0;
+  margin-bottom: 48px;
+}
+.col {
+  padding: 1em;
+  background: #edf4f7;
+  border-radius: .35em;
+  margin: 0 .5em .8em;
+}
+.main-footer {
+  background: #d9e4ea;
+  padding: 2em 0;
+  margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+  width: 190px;
+}
+.headline {
+  margin-bottom: 0;
+}
+.feat-img {
+  border-radius: 5px;
+}
+.button {
+  color: #fff;
+  text-align: center;
+  padding: .625em 1.25em;
+  background: #3acec2;
+  border-radius: .35em;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  .main-header,
+  .row {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .tagline {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 1025px) {
+  .main-header,
+  .row {
+    width: 80%;
+    max-width: 1150px;
+  }
+}
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+
+
+.example2 {
+@media (min-width: 769px) {
+
+  .main-header,
+  .main-nav,
+  .row,
+  .col {
+    display: flex;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col {
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .button {
+    margin-top: auto;
+    align-self: flex-start; //(no longer full)
+  }
+
+}
+
+@media (min-width: 1025px) {
+
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
+
+}
+
+
+
+  /* =================================
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.6;
+  color: #3a3a3a;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  font-size: .95em;
+}
+h2,
+h3,
+a {
+  color: #093a58;
+}
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+  font-size: 1.35em;
+  margin: 0;
+}
+.main-nav {
+  margin-top: 5px;
+}
+.name a,
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+.main-nav a {
+  font-size: .95em;
+  color: #3acec2;
+  text-transform: uppercase;
+}
+.main-nav a:hover {
+  color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  padding-top: .35em;
+  padding-bottom: .35em;
+}
+.banner,
+.main-footer {
+  text-align: center;
+}
+.banner {
+  color: #fff;
+  background: #3acec2;
+  padding: 1em 0;
+  margin-bottom: 24px;
+}
+.col {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.main-footer {
+  background: #d9e4ea;
+  padding: 2em 0;
+  margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+  width: 132px;
+}
+.headline {
+  margin-bottom: 0;
+}
+.feat-img {
+  border-radius: 5px;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  .main-header,
+  .row-thing,
+  .footer-inner{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1150px;
+  }
+  .tagline {
+    font-size: 1.4em;
+  }
+}
+
+/* =================================
+  Base Styles
+==================================== */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#page-main {
+  padding: 0;
+}
+.example3 {
+.row-thing {
+  flex: 1;
+  background: black;
+}
+
+}
+/* =================================
+  Media Queries
+==================================== */
+.example3 {
+@media (min-width: 769px) {
+
+  .main-header,
+  .main-nav {
+    display: flex;
+  }
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media (min-width: 1025px) {
+
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
+}
