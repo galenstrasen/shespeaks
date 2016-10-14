@@ -125,3 +125,28 @@ http://stackoverflow.com/questions/31800298/how-to-make-bootstrap-columns-the-sa
 #page-main {
 	margin-top: $menu-height; /* height of header */
 }
+
+
+
+
+.swatch-wrap { padding: 20px 0;  font-weight: 800;  float: left; width: 100%;}
+
+.swatch {
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin-right: 30px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 100px;
+  color: rgb(255, 255, 153);
+  color: $white;
+  // &.color1 { background-color: $color1; }
+  .m0 & {
+    margin-right: 0;
+  }
+}
+
+
+.lavender {color: $lavender;}
+.peach { color: $peach;}
