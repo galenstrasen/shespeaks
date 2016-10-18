@@ -123,7 +123,7 @@ http://stackoverflow.com/questions/31800298/how-to-make-bootstrap-columns-the-sa
 /* PUSH BODY DOWN SO NOT BLOCKED BY FIXED HEADER
 ================================================ */
 #page-main {
-	margin-top: $menu-height; /* height of header */
+	//margin-top: $menu-height; /* height of header */
 }
 
 
@@ -148,5 +148,5 @@ http://stackoverflow.com/questions/31800298/how-to-make-bootstrap-columns-the-sa
 }
 
 
-.lavender {color: $lavender;}
-.peach { color: $peach;}
+// .lavender {color: $lavender;}
+// .peach { color: $peach;}

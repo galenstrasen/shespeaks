@@ -1,70 +1,40 @@
-$section-height: 400px;
-$menu-height:50px;
-$mobile-menu-height : 50px;
+$transition: cubic-bezier(0.65, 0.05, 0.36, 1) 0.3s;
 
-$transition200: all .2s ease-in;
-$transition300: all .3s ease-in;
 
 /* COLORS */
 $white: #FFF;
 $black : #000;
-$action-color : rgba(239,76,35,0.8);
-$heading-color : rgba(239,76,35,0.8);
-$link-color : #4A96AD;
-$border-color : #ccc;
+$peach: #f1d5c3;
+$light-gray: #f7f7f7;
+$med-gray: #a9adb0;
+$aqua: #b9e2e4;
 
-$lavender: rgb(204, 204, 255);
-$peach: rgb(255, 187, 153);
-$aqua: rgb(128, 223, 255);
-$lime: rgb(194, 235, 71);
-$pink: rgb(255, 153, 204);
-$purp: rgb(223, 128, 255);
-$color1: #cdf;
-$color2: rgb(204, 221, 255);
-
-
-$color5: rgb(204, 255, 238);
-
-$color7: rgb(204, 255, 204);
-
-
-$color10: rgb(179, 198, 255);
-$color11: rgb(153, 230, 230);
-$color12: rgb(194, 194, 214);
-$color13: rgb(163, 163, 194);
-$color14: rgb(179, 255, 236);
-$color15: rgb(194, 235, 71);
-
+$action-color: $peach;
+$border-color: $light-gray;
 
 /* FONT SIZES */
+$hero: 6.25rem;
 $h1: 4rem;
-$h2: 3rem;
+$h2: 4rem;
 $h3: 2.5rem;
-$h4: 2rem;
-$h5: 1.5rem;
-$p: 1rem;
+$h4: 16px;
+$h5: 14px;
+$p: 1.2rem;
 
 /* FONT FAMILIES */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@mixin heading-font($weight: 400) {
-	font-family: 'Montserrat', sans-serif;
-	font-style: normal;
-	font-weight: $weight;
-}
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:500,500i,700,700i,900,900i|Roboto+Mono:300,300i,400,400i,700,700i);
+$playfair: 'Playfair Display', serif;
+$mono: 'Roboto Mono', sans-serif;
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
-@import url(https://fonts.googleapis.com/css?family=Varela+Round);
-@mixin copy-font($weight: 400) {
-	font-family: 'Open Sans', sans-serif;
-	font-style: normal;
-	font-weight: $weight;
-}
 
 /* FONT WEIGHTS */
-$fw-light: 300;
-$fw-semi: 600;
-$fw-bold: 700;
-$fw-black: 900;
+$pf-reg: 500;
+$pf-bold: 700;
+$pf-black: 900;
+$rm-light: 300;
+$rm-reg: 400;
+$rm-bold: 700;
+
 
 /* FIXED WIDTHS */
 $fixed-w-xl: 1370px;

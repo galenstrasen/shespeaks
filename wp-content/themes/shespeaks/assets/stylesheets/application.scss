@@ -73,13 +73,14 @@
 
 
 @import '../vendor/magnific-popup/src/css/main';
-
+@import '../vendor/slick-carousel/slick/slick.scss';
+@import '../vendor/slick-carousel/slick/slick-theme.scss';
 
 /* ======== VENDOR STYLES - Copied & Pasted (scss not provided) ======== */
 
 @import "vendor/video-js";
 @import "vendor/animate";
-@import "vendor/flexslider"; /* #### have to rename file to sass - move fonts to public */
+//@import "vendor/flexslider"; /* #### have to rename file to sass - move fonts to public */
 
 
 /**
@@ -144,7 +145,7 @@
 
 /* Templates */
 @import "templates/home";
-
-@import "flex-test";
+@import "templates/section-intro";
+//@import "flex-test";
 
 

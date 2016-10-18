@@ -38,7 +38,7 @@
 
   <div class="js-sitewrap site-wrap"> <!-- .body has opacity 0 for fade in effect on load -->
 
-    <header id="header" role="header">
+    <header role="header">
       <?php get_template_part( 'partials/header/fixed-nav' ); ?>
     </header>
     <!-- #header -->
