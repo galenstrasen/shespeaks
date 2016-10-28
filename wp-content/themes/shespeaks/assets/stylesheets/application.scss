@@ -116,40 +116,38 @@
 @import "00_base/vendor-fix";
 @import "00_base/main";
 
-//@import "global/variables";
-//@import "global/mixins";
-//@import "global/keyframes";
+@import "01_atom/bootstrap-hacks";
+@import "01_atom/helpers";
+@import "01_atom/layout";
+@import "01_atom/typography";
+@import "01_atom/buttons";
+@import "01_atom/forms";
+@import "01_atom/img-bg";
+
+
 
 /* Base */
-//@import "base/reset";
-//@import "base/vendor-fix";
-//@import "base/main";
-@import "base/layout";
-@import "base/helpers";
+//@import "base/layout";
+//@import "base/helpers";
 
 /* Layout */
 @import "layout/header";
 @import "layout/footer";
-@import "layout/forms";
+//@import "layout/forms";
 @import "layout/widgets";
 @import "layout/comments";
 @import "layout/page";
 
 /* Components */
-//@import "components/buttons";
 @import "components/forms";
 @import "components/preloader";
-// @import "components/flex-center-text";
-// @import "components/flex-left-right-img-copy";
-// @import "components/flex-sectionwipe";
-// @import "components/flex-img-gallery";
-// @import "components/flex-events";
+
 
 @import "components/post-item";
 @import "components/comments";
 
-@import "01_atom/typography";
-@import "01_atom/buttons";
+//@import "01_atom/typography";
+//@import "01_atom/buttons";
 
 /* Templates */
 @import "04_template/home";

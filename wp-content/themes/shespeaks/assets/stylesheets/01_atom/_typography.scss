@@ -65,6 +65,14 @@ p {
  margin-bottom: 1.5rem;
  color: $text-color;
 }
+.small {
+  font-size: $small;
+}
+
+.lead,
+.lead p {
+  font-size: $lead;
+}
 ul { margin: 0; padding: 0px;}
 li {margin: 0px; padding: 0px; list-style: none;}
 .hero {
@@ -72,7 +80,14 @@ li {margin: 0px; padding: 0px; list-style: none;}
   font-weight: $pf-black;
   font-style: italic;
 }
-i, em {
+.strong,
+b,
+strong {
+  font-weight: bold;
+}
+
+i,
+em {
   font-style: italic;
 }
 .navbar-brand {
