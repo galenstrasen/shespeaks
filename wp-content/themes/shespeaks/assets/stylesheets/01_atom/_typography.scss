@@ -1,0 +1,118 @@
+
+
+
+h1, .h1, h2, .h2, h3, .h3, .hero {
+  font-family: $playfair;
+  font-weight: $pf-black;
+  @include spacing(33);
+  color: $black;
+  margin-bottom: 1.5rem;
+}
+
+h4, .h4, h5, .h5, h6 {
+  font-family: $mono;
+  text-transform: uppercase;
+  @include spacing(800);
+  color: $black;
+  margin-bottom: 1.5rem;
+}
+
+h1,
+.h1 {
+ font-size: $h1; /* 4em */
+}
+
+h2,
+.h2 {
+ font-size: $h2; /* 3em */
+}
+
+h3,
+.h3 {
+ font-size: $h3; /* 2.5em */
+
+}
+
+h4,
+.h4 {
+ font-size: $h4; /* 2em */
+//font-weight: $rm-bold;
+}
+
+h5,
+.h5 {
+ font-size: $h5; /* 1.5em */
+}
+
+a {
+  color: $black;
+  text-decoration: underline;
+}
+
+p {
+ line-height: 1.8rem;
+ margin-bottom: 1.5rem;
+ color: $text-color;
+}
+
+.hero {
+  font-size: $hero;
+  font-weight: $pf-black;
+  font-style: italic;
+}
+
+.highlight {
+  span {
+    //display: block;
+    display: inline-block;
+    @include relative($z:10);
+
+    padding: 0 10px;
+    &::before {
+      content:'';
+      clear: both;
+      //display: block;
+      @include absolute($l:0, $b:-2px, $z:-1);
+      width: 100%;
+      //@include relative;
+      height: 25px;
+      background: $accent-color;
+    }
+
+  }
+  &.hero span::before {
+    height: 40px;
+  }
+
+}
+
+
+.peach {
+  color: $peach;
+}
+
+.accent {
+  color: $accent-color;
+}
+.bg-accent {
+  background-color: $accent-color;
+}
+.magenta {
+  color: $magenta;
+}
+.bg-magenta {
+  background-color: $magenta;
+}
+.purp {
+  color: $purp;
+}
+.bg-purp {
+  background-color: $purp;
+}
+
+.aqua {
+  color: $aqua;
+}
+.bg-aqua {
+  background-color: $aqua;
+}

@@ -10,7 +10,7 @@
                 <span class="icon-bar three"></span>
             </button>
 
-            <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
+            <a class="navbar-brand hidden" href="<?php bloginfo('url'); ?>">
                 <?php bloginfo('name'); ?>
             </a>
         </div>

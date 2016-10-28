@@ -1,24 +1,24 @@
 <?php get_header(); ?>
 
-<?php
-// Hero Slider
-//get_template_part( 'partials/slider/home-hero' ); ?>
-
-<main id="page-main" role="main">
 
 
+<main class="pg-main" role="main">
 
-					<?php get_template_part( 'partials/colors' ); ?>
-<div class="example1"><?php //get_template_part( 'partials/flex-ex-1' ); ?></div>
+  <section class="pg-section section-intro">
+    <?php get_template_part( 'partials/intro' ); ?>
+  </section>
 
-<div class="example2"><?php //get_template_part( 'partials/flex-ex-2' ); ?></div>
+  <section class="pg-section section-about">
+    <?php get_template_part( 'partials/about' ); ?>
+  </section>
 
-<div class="example3"><?php //get_template_part( 'partials/flex-ex-3' ); ?></div>
+   <section class="pg-section section-deuce">
+    <?php get_template_part( 'partials/style' ); ?>
+    <h1>She Speaks in Code</h1>
+  </section>
 
 
 
-
-			<?php //get_sidebar(); ?>
 
 
 </main>
