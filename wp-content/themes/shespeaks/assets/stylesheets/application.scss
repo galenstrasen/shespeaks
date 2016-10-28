@@ -124,7 +124,15 @@
 @import "01_atom/forms";
 @import "01_atom/img-bg";
 
-
+@import "02_molecule/preloader";
+@import "02_molecule/wp-comments";
+@import "02_molecule/wp-widgets";
+@import "02_molecule/navbar-toggle";
+@import "02_molecule/video";
+@import "02_molecule/social-bar";
+@import "02_molecule/link-card";
+@import "02_molecule/slick-nav";
+@import "02_molecule/image-caption-overlay";
 
 /* Base */
 //@import "base/layout";
