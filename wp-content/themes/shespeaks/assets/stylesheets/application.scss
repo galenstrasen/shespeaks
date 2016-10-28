@@ -109,14 +109,21 @@
 
 
 /* Global */
-@import "global/variables";
-@import "global/mixins";
-@import "global/keyframes";
+@import "00_base/variables";
+@import "00_base/mixins";
+@import "00_base/keyframes";
+@import "00_base/reset";
+@import "00_base/vendor-fix";
+@import "00_base/main";
+
+//@import "global/variables";
+//@import "global/mixins";
+//@import "global/keyframes";
 
 /* Base */
-@import "base/reset";
-@import "base/vendor-fix";
-@import "base/main";
+//@import "base/reset";
+//@import "base/vendor-fix";
+//@import "base/main";
 @import "base/layout";
 @import "base/helpers";
 
@@ -132,11 +139,11 @@
 //@import "components/buttons";
 @import "components/forms";
 @import "components/preloader";
-@import "components/flex-center-text";
-@import "components/flex-left-right-img-copy";
-@import "components/flex-sectionwipe";
-@import "components/flex-img-gallery";
-@import "components/flex-events";
+// @import "components/flex-center-text";
+// @import "components/flex-left-right-img-copy";
+// @import "components/flex-sectionwipe";
+// @import "components/flex-img-gallery";
+// @import "components/flex-events";
 
 @import "components/post-item";
 @import "components/comments";

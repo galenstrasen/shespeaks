@@ -1,4 +1,4 @@
-$transition: cubic-bezier(0.65, 0.05, 0.36, 1) 0.3s;
+//$transition: cubic-bezier(0.65, 0.05, 0.36, 1) 0.3s;
 
 
 /* COLORS */
@@ -38,14 +38,15 @@ $mono: 'Roboto Mono', sans-serif;
 
 
 /* FONT WEIGHTS */
-$pf-reg: 500;
-$pf-bold: 700;
-$pf-black: 900;
-$rm-light: 300;
-$rm-reg: 400;
-$rm-med: 500;
-$rm-bold: 700;
 
+
+
+$fw-light: 300;
+$rm-reg: 400;
+$pf-reg: 500;
+$rm-med: 500;
+$fw-bold: 700;
+$pf-black: 900;
 
 /* FIXED WIDTHS */
 $fixed-w-xl: 1370px;
