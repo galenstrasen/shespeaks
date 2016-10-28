@@ -139,20 +139,9 @@
 @import "03_organism/page-hero";
 @import "03_organism/layout-panels";
 
-/* Layout */
-//@import "layout/header";
-@import "layout/footer";
-
-@import "layout/page";
-
-
-
-//@import "components/post-item";
-//@import "components/comments";
-
-
 
 /* Templates */
+@import "04_template/page";
 @import "04_template/home";
 @import "04_template/section-intro";
 @import "04_template/page-cv";
