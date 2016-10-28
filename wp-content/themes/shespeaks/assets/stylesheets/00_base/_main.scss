@@ -1,0 +1,59 @@
+html {
+	overflow-x: hidden;
+	font-size: 15px;
+	@include font-smoothing;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.25), only screen and (min-device-pixel-ratio:1.25), only screen and (min-resolution:200dpi), only screen and (min-resolution:1.25dppx) { -webkit-font-smoothing: subpixel-antialiased; }
+
+body {
+	overflow-x: hidden;
+	font-family: $mono;
+}
+
+.site-wrap {
+	@include opacity(0);
+}
+
+:active,
+:focus  {
+	outline: none;
+}
+
+::-moz-selection {
+	// background: $black;
+	// color: $white;
+}
+
+::selection {
+	// background: $black;
+	// color: $white;
+}
+
+::-moz-focus-inner,
+a::-moz-focus-inner,
+button::-moz-focus-inner {
+	border: 0;
+}
+
+:focus {
+	outline: none!important;
+}
+
+::-moz-focus-inner {
+	border: 0;
+}
+
+.post-edit-link{
+	text-align: center;
+	padding: 8px 20px;
+	text-transform: uppercase;
+	@include fixed($b:0,$l:50%, $z:10000);
+	margin-left: -75px;
+	width: 150px;
+	display: inline-block;
+	background-color: turquoise;
+	color: $white;
+	font-weight: bold;
+}
+

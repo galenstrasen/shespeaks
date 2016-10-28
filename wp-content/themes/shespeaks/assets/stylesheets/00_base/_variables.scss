@@ -1,0 +1,91 @@
+
+// * VARIABLES *
+// - Colors
+// - Font Sizes
+// - Font Families
+// - Font Weights
+// - Fixed Widths
+// - Gutter
+// - Screen Size
+// - Global Dimensions
+// - Interaction
+
+
+/* COLORS */
+$white: #FFF;
+$black : #000;
+$peach: #f1d5c3;
+$yellow : #fffd38;
+$light-gray: #f7f7f7;
+$med-gray: #a9adb0;
+$aqua: turquoise;
+$chartruese: #bdf030;
+$nice-yellow: #fbf16b;
+$magenta: #d83f87;
+$purp: #a568ed;
+
+$action-color: $chartruese;
+$border-color: $light-gray;
+$text-color: darken($light-gray, 40%);
+$accent-color: $chartruese;
+
+/* FONT SIZES */
+$hero: 6.5rem;
+$h1: 4rem;
+$h2: 4rem;
+$h3: 20px;
+$h4: 20px;
+$h5: 14px;
+$p: 1.2rem;
+$lead: 1.125rem;
+$small: .875rem;
+
+/* FONT FAMILIES */
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:500,500i,700,700i,900,900i|Roboto+Mono:300,300i,400,400i,500,500i,700,700i);
+$playfair: 'Playfair Display', serif;
+$mono: 'Roboto Mono', sans-serif;
+
+// @mixin heading-font($weight: 800) {
+// 	font-family: $heading-font;
+// 	font-weight: $weight;
+// }
+
+// @mixin copy-font($weight: 400) {
+// 	font-family: $copy-font;
+// 	font-weight: $weight;
+// }
+
+/* FONT WEIGHTS */
+
+$fw-light: 300;
+$rm-reg: 400;
+$pf-reg: 500;
+$rm-med: 500;
+$fw-bold: 700;
+$pf-black: 900;
+
+/* FIXED WIDTHS */
+$fixed-w-xl: 1370px;
+$fixed-w-lg: 1170px;
+$fixed-w-md: 970px;
+$fixed-w-sm: 750px;
+
+/* GUTTER */
+$gutter: 15px;
+$col: 100%/12;
+
+/* SCREEN SIZE */
+$screen-tiny: 480px;
+$screen-xxs: 600px;
+$screen-xs: 768px;
+$screen-sm: 992px;
+$screen-md: 1200px;
+$screen-lg: 1350px;
+$screen-xl: 1400px;
+
+/* GLOBAL DIMENSIONS */
+// $menu-height: 50px;
+// $mobile-menu-height: 50px;
+
+/* INTERACTION */
+$transition: cubic-bezier(0.65, 0.05, 0.36, 1) 0.3s;

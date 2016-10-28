@@ -109,44 +109,40 @@
 
 
 /* Global */
-@import "global/variables";
-@import "global/mixins";
-@import "global/keyframes";
+@import "00_base/variables";
+@import "00_base/mixins";
+@import "00_base/keyframes";
+@import "00_base/reset";
+@import "00_base/vendor-fix";
+@import "00_base/main";
 
-/* Base */
-@import "base/reset";
-@import "base/vendor-fix";
-@import "base/main";
-@import "base/layout";
-@import "base/helpers";
-
-/* Layout */
-@import "layout/header";
-@import "layout/footer";
-@import "layout/forms";
-@import "layout/widgets";
-@import "layout/comments";
-@import "layout/page";
-
-/* Components */
-//@import "components/buttons";
-@import "components/forms";
-@import "components/preloader";
-@import "components/flex-center-text";
-@import "components/flex-left-right-img-copy";
-@import "components/flex-sectionwipe";
-@import "components/flex-img-gallery";
-@import "components/flex-events";
-
-@import "components/post-item";
-@import "components/comments";
-
+@import "01_atom/bootstrap-hacks";
+@import "01_atom/helpers";
+@import "01_atom/layout";
 @import "01_atom/typography";
 @import "01_atom/buttons";
+@import "01_atom/forms";
+@import "01_atom/img-bg";
+
+@import "02_molecule/preloader";
+@import "02_molecule/wp-comments";
+@import "02_molecule/wp-widgets";
+@import "02_molecule/navbar-toggle";
+@import "02_molecule/video";
+@import "02_molecule/social-bar";
+@import "02_molecule/link-card";
+@import "02_molecule/slick-nav";
+@import "02_molecule/image-caption-overlay";
+
+@import "03_organism/header";
+@import "03_organism/footer";
+@import "03_organism/page-hero";
+@import "03_organism/layout-panels";
+
 
 /* Templates */
+@import "04_template/page";
 @import "04_template/home";
 @import "04_template/section-intro";
 @import "04_template/page-cv";
-//@import "flex-test";
 
