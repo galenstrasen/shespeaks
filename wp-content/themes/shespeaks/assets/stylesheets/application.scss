@@ -134,32 +134,26 @@
 @import "02_molecule/slick-nav";
 @import "02_molecule/image-caption-overlay";
 
-/* Base */
-//@import "base/layout";
-//@import "base/helpers";
+@import "03_organism/header";
+@import "03_organism/footer";
+@import "03_organism/page-hero";
+@import "03_organism/layout-panels";
 
 /* Layout */
 @import "layout/header";
 @import "layout/footer";
-//@import "layout/forms";
-@import "layout/widgets";
-@import "layout/comments";
+
 @import "layout/page";
 
-/* Components */
-@import "components/forms";
-@import "components/preloader";
 
 
 @import "components/post-item";
 @import "components/comments";
 
-//@import "01_atom/typography";
-//@import "01_atom/buttons";
+
 
 /* Templates */
 @import "04_template/home";
 @import "04_template/section-intro";
 @import "04_template/page-cv";
-//@import "flex-test";
 
