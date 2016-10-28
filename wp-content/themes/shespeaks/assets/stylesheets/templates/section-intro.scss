@@ -7,17 +7,27 @@ $gap: 30px;
 .pg-section {
   @include relative;
   width: 100%;
-  height: calc(100vh - 30px);
-  padding-bottom: $gap;
+
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 
+
+
+
 .section-intro {
+  padding-top: 0;
+  padding-bottom: $gap;
+  height: calc(100vh - 30px);
   .hero-slider {
     @include opacity(0.8);
     //@include border-radius(1px);
-    box-shadow: inset 33px 33px 80px #b2b2b2;
-    &,
+    //box-shadow: inset 33px 33px 80px #b2b2b2;
+    // width: 85%;
+    // height: 100%;
+    width: 100%;
+  height: calc(100vh - 60px);
     .slick-list,
     .slick-track,
     .item,
@@ -25,97 +35,28 @@ $gap: 30px;
       @include wh100;
     }
   }
-  .intro-text {
+}
 
-    @include absolute;
-    top: 50%;
-    left: 50%;
-    //background: $peach;
-    //display: none;
-    font-family: 'Playfair Display';
-    text-shadow: 33px 33px 80px #b2b2b2;
-font-weight: 700;
-    font-size: 60px;
-    color: #fffd38;
-    color: white;
-    text-align: center;
-    @include transform(translate(-50%,-50%));
-    //font-family: 'Libre Franklin';
-    box-shadow: 33px 33px 80px #b2b2b2;
-    display: none;
-
-  }
-  .shadow-text {
-
-   text-align: center;
-      font-size: 150px;
-      line-height: 130px;
-      small {
-        font-size: 100px;
-        line-height: 50px;
-        font-weight: 700;
-
-      }
-
-      .pink {
-        //color: lighten($good,10%);
-      }
-      @include absolute($t:15%,$l:0);
-      @include respond-to($screen-sm) {
-        font-size: 120px;
-        line-height: 90px;
-        top: 20%;
-        small {
-          font-size: 80px;
-          line-height: 30px;
-
+    .caption {
+      @include absolute($t:50%, $l:0);
+      @include transform(translateY(-50%));
+      .hero {
+        margin-bottom: 4rem;
+        &.highlight span {
+          padding-left: 30px;
+          padding-right: 0;
         }
       }
-      //@include transform(translateY(-50%));
-      width: 100%;
-      font-family: 'Open Sans', sans-serif;
-      // font-family: 'Rubik One';
-      // font-family: 'Titillium Web';
-      // font-family: 'Work Sans';
-      font-family: 'Libre Franklin';
-      font-weight: 900;
-      font-style: italic;
-// font-family: 'Rubik';
-// font-weight: 900;
-// font-style: italic;
-      color: rgba(0,0,0,0.2);
-      color: #fff;
-//color: lighten($good,13%);
-      font-family: 'Playfair Display';
-      font-weight: 900;
-      &::after {
-        content: '';
-        @include absolute;
-    //top: 50%;
-    left: 50%;
-    z-index: 9;
-    //background: $good;
-    //background: yellow;
-    bottom: -130px;
-        @include transform(translateX(-50%));
-        width: 10px;
-        height: 100px;
+      .sub,
+      .btn {
+        margin-left: 35px;
       }
+      .sub {
+        margin-bottom: 4rem;
+      }
+
     }
-    .caption {
-      @include absolute;
-      //background: $peach;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: calc(100% - 60px);
-    }
-}
-.yellow {
-  color: #fffd38;
-  //color: desaturate($yellow,20%);
-  //color: $good;
-}
+
 .img-bg {
   background-repeat: no-repeat;
   background-position: center center;
@@ -123,7 +64,13 @@ font-weight: 700;
 @include border-radius(1px);
 }
 
-.section-deuce {
-  //background-color: $good;
-  color: $white;
+.content-box {
+  text-align: center;
+  border: 10px solid $border-color;
+  @include relative;
+  padding: 75px;
+  .offset-img {
+    @include absolute($l:0px,$b:0);
+    @include transform(translate(-50%,50%));
+  }
 }

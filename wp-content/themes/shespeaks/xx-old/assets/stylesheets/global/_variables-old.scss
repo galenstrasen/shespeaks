@@ -1,0 +1,88 @@
+$section-height: 400px;
+$menu-height:50px;
+$mobile-menu-height : 50px;
+
+$transition200: all .2s ease-in;
+$transition300: all .3s ease-in;
+
+/* COLORS */
+$white: #FFF;
+$black : #000;
+$action-color : rgba(239,76,35,0.8);
+$heading-color : rgba(239,76,35,0.8);
+$link-color : #4A96AD;
+$border-color : #ccc;
+$good : #f1d5c3;
+$yellow : #fffd38;
+$lavender: rgb(204, 204, 255);
+$peach: rgb(255, 187, 153);
+$aqua: rgb(128, 223, 255);
+$lime: rgb(194, 235, 71);
+$pink: rgb(255, 153, 204);
+$purp: rgb(223, 128, 255);
+$color1: #cdf;
+$color2: rgb(204, 221, 255);
+
+
+$color5: rgb(204, 255, 238);
+
+$color7: rgb(204, 255, 204);
+
+
+$color10: rgb(179, 198, 255);
+$color11: rgb(153, 230, 230);
+$color12: rgb(194, 194, 214);
+$color13: rgb(163, 163, 194);
+$color14: rgb(179, 255, 236);
+$color15: rgb(194, 235, 71);
+
+
+/* FONT SIZES */
+$h1: 4rem;
+$h2: 3rem;
+$h3: 2.5rem;
+$h4: 2rem;
+$h5: 1.5rem;
+$p: 1rem;
+
+/* FONT FAMILIES */
+@import url(https://fonts.googleapis.com/css?family=Libre+Franklin:700,900i|Playfair+Display:500,500i,700,700i,900,900i|Rubik:500,900,900i);
+@import url(https://fonts.googleapis.com/css?family=Kanit:800|Open+Sans:800i|Rubik+One|Titillium+Web:900|Work+Sans:900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@mixin heading-font($weight: 400) {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: $weight;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@mixin copy-font($weight: 400) {
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: $weight;
+}
+
+/* FONT WEIGHTS */
+$fw-light: 300;
+$fw-semi: 600;
+$fw-bold: 700;
+$fw-black: 900;
+
+/* FIXED WIDTHS */
+$fixed-w-xl: 1370px;
+$fixed-w-lg: 1170px;
+$fixed-w-md: 970px;
+$fixed-w-sm: 750px;
+
+/* GUTTER */
+$gutter: 15px;
+
+/* SCREEN SIZE */
+$screen-tiny: 480px;
+$screen-xxs: 600px;
+$screen-xs: 768px;
+$screen-sm: 992px;
+$screen-md: 1200px;
+$screen-lg: 1350px;
+$screen-xl: 1400px;

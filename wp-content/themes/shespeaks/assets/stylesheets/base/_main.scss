@@ -1,10 +1,9 @@
 html {
 	overflow-x:hidden;
 	-webkit-font-smoothing:antialiased;
-	font-size: 17px;
+	font-size: 15px;
 
-	@include respond-to($screen-sm) { font-size: 15px; }
-	@include respond-to($screen-xxs) { font-size: 12px; }
+
 
 }
 
@@ -16,6 +15,8 @@ body {
 	//background-color: desaturate($good, 15%);
 	// background-color:lighten($good,13%);
 	// @include copy-font();
+	font-family: $mono;
+
 }
 
 .site-wrap {
@@ -25,7 +26,7 @@ body {
 a {
 	color: $link-color;
 
-	//@include transition($transition200);
+	@include transition($transition);
 	&:hover,
 	&:focus,
 	&:active {

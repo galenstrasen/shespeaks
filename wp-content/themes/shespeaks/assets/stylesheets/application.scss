@@ -129,7 +129,7 @@
 @import "layout/page";
 
 /* Components */
-@import "components/buttons";
+//@import "components/buttons";
 @import "components/forms";
 @import "components/preloader";
 @import "components/flex-center-text";
@@ -148,4 +148,5 @@
 @import "templates/section-intro";
 //@import "flex-test";
 
-
+@import "01_atom/typography";
+@import "01_atom/buttons";
