@@ -33,7 +33,7 @@ select {
     // need to set color of option - setting color of select overrides this
     color: $black;
     &::checked {
-      color: $heading-color
+      //color: $heading-color
     }
   }
   &::-moz-focusring {
@@ -43,6 +43,6 @@ select {
 }
 
 input[type="submit"] {
-  @extend %btn;
+  //@extend %btn;
 }
 
