@@ -2,7 +2,7 @@
 // Template Name: CV
 ?>
 <?php get_header(); while ( have_posts() ) : the_post();?>
-<main id="page-main" role="main">
+<main class="pg-main" role="main">
 
   <div class="container-fluid stop1440">
     <div class="row">
