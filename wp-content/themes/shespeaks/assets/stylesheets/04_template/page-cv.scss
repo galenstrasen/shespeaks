@@ -1,0 +1,12 @@
+
+
+.cv-header {
+  //background: magenta;
+  text-align: center;
+  @include relative;
+  .hero {
+    font-style: normal;
+    color: rgba($black,0.1);
+    //font-style: $roboto;
+  }
+}

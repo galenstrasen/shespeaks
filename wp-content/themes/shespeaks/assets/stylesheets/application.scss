@@ -141,12 +141,12 @@
 @import "components/post-item";
 @import "components/comments";
 
-
-
-/* Templates */
-@import "templates/home";
-@import "templates/section-intro";
-//@import "flex-test";
-
 @import "01_atom/typography";
 @import "01_atom/buttons";
+
+/* Templates */
+@import "04_template/home";
+@import "04_template/section-intro";
+@import "04_template/page-cv";
+//@import "flex-test";
+
