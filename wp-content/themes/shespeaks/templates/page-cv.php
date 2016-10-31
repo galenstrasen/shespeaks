@@ -4,12 +4,39 @@
 <?php get_header(); while ( have_posts() ) : the_post();?>
 <main class="pg-main" role="main">
 
-  <div class="container-fluid stop1440">
+
+<?php get_template_part( 'partials/03_organism/_intro-half' ); ?>
+<section class="pg-section animation" data-animation="animation-fade-in-down" style="padding-top: 0;">
+<div class="captionx">
+  <!-- <h2 class="hero highlight">
+    <span>Galen</span><br/>
+    <span>Strasen</span>
+  </h2> -->
+  <ul class="plus -inline text-right h4">
+    <li><a href="">gstrasen@gmail.com</a></li>
+    <li>917.816.5093</li>
+    <li>LinkedIn</li></ul>
+
+<!--
+  <p class="h3">Jump to:</p>
+  <ul class="equal">
+        <li><a href="">Experience</a></li>
+        <li><a href="">Core Competencies</a></li>
+        <li><a href="">Skillz</a></li>
+        <li><a href="">Skillz - Quick & Dirty</a></li>
+        <li><a href="">Education</a></li>
+        <li><a href="">Fun Facts</a></li>
+        <li><a href="">Connect</a></li>
+      </ul> -->
+      <p class="text-right text-xs-center"> <a href="" class="btn">Print PDF</a></p>
+</div>
+</section>
+  <div class="container">
     <div class="row">
 
         <div class="col-sm-12">
         <article class="entry-content">
-          <header class="cv-header">
+          <header class="cv-header hidden">
           <h2 class="hero hidden">She Speaks in Code</h2>
           <h1 class="me hero">Galen Strasen</h1>
           <p class="contact">917-816-5093 | <a href="">gstrasen@gmail.com</a><br/>4138 Webster Street #7, Oakland CA 94609</p>
@@ -93,6 +120,52 @@
               </ul>
               </div>
           </section>
+          <section class="cv-section -skillz-qd">
+          <div class="cv-block">
+            <h2 class="heading">Skillz - Quick &amp; Dirty</h2>
+            <h4 class="highlight"><span>Development</span></h4>
+            <div class="row">
+              <div class="col-xs-6">
+                <ul class="plus">
+                  <li><strong>HTML:</strong> W3C compliant</li>
+                  <li><strong>CSS:</strong> Bootstrap, Atomic Design</li>
+                  <li><strong>Responsive Development:</strong> on-device remote testing with wildcard DNS (xip.io)</li>
+                  <li>Performance optimization and cross browser testing</li>
+
+                </ul>
+              </div>
+              <div class="col-xs-6">
+                <ul class="plus">
+                  <li><strong>Client-side:</strong> Javascript, jQuery, working with APIs, leveraging JSON</li>
+                  <li><strong>Server-side:</strong> PHP, .NET</li>
+                  <li><strong>Web server environments:</strong> PHP/MySQL</li>
+                  <li><strong>Graphics for web:</strong> Best practices. Photoshop, Ilustrator, svg, png, jpg</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                <h4 class="highlight"><span>Workflow</span></h4>
+                <ul class="plus">
+                  <li><strong>Operating Systems:</strong> Mac, Microsoft Windows</li>
+                    <li><strong>Source control:</strong> Git/GitHub</li>
+                  <li><strong>Package management:</strong> npm, bower, git</li>
+                  <li><strong>Preprocessors:</strong> SCSS, Gulp</li>
+
+                </ul>
+              </div>
+              <div class="col-xs-6">
+                <h4 class="highlight"><span>Project Management</span></h4>
+                <ul class="plus">
+                    <li>Strong written and oral communication</li>
+                  <li>Experience communicating tech jargon into a language clients can understand.</li>
+                  <li>Agile scrum process</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          </section>
           <section class="cv-section">
           <div class="cv-block">
             <h2 class="heading">Skillz</h2>
@@ -140,6 +213,16 @@
             <h4 class="highlight"><span>United Nations International School</span></h4>
             <h3>International Baccalaureate, English, Anthrolopology, Theater Arts</h3>
             <h5>1991 - 2004</h5>
+            </div>
+          </section>
+          <section class="cv-section">
+            <h2 class="heading">Connect</h2>
+            <div class="cv-block">
+              <ul class="plus">
+              <li><a href="">LinkedIn</a></li>
+              <li><a href="">GitHub</a></li>
+              <li><a href="">Codepen</a></li>
+              <li><a href="">Instagram</a></li>
             </div>
           </section>
           <section class="cv-section hidden">
