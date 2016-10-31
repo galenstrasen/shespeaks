@@ -1,12 +1,43 @@
 
 
+
+.page-template-page-cv .section-intro {
+  .caption {
+    //margin-top: 50vh;
+    position: static;
+    //margin-top: 3rem;
+    @include transform(translate(0,0));
+  }
+}
 .cv-header {
   //background: magenta;
   text-align: center;
+  padding: 2rem 0 5rem 0;
   @include relative;
   .hero {
     font-style: normal;
     color: rgba($black,0.1);
     //font-style: $roboto;
+  }
+}
+
+.cv-section {
+  padding: 0 0 5rem 0;
+  .heading {
+    margin-bottom: 3rem;
+  }
+  &.-skillz-qd {
+    .plus {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.cv-block {
+  border-bottom: $border-style;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  &:last-child {
+    margin-bottom: 0;
   }
 }

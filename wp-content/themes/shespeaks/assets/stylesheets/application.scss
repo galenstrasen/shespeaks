@@ -120,10 +120,13 @@
 @import "01_atom/helpers";
 @import "01_atom/layout";
 @import "01_atom/typography";
+@import "01_atom/colors";
 @import "01_atom/buttons";
 @import "01_atom/forms";
 @import "01_atom/img-bg";
 
+@import "02_molecule/lists";
+@import "02_molecule/highlight";
 @import "02_molecule/preloader";
 @import "02_molecule/wp-comments";
 @import "02_molecule/wp-widgets";
@@ -136,7 +139,7 @@
 
 @import "03_organism/header";
 @import "03_organism/footer";
-@import "03_organism/page-hero";
+//@import "03_organism/page-hero";
 @import "03_organism/layout-panels";
 
 
@@ -146,3 +149,4 @@
 @import "04_template/section-intro";
 @import "04_template/page-cv";
 
+@import "03_organism/section-intro";

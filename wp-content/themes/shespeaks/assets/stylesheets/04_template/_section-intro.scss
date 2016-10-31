@@ -1,68 +1,14 @@
-$gap: 30px;
-
-.pg-main {
-  padding: $gap $gap 0;
-}
-
-.pg-section {
-  @include relative;
-  width: 100%;
-
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
 
 
 
 
 
-.section-intro {
-  padding-top: 0;
-  padding-bottom: $gap;
-  height: calc(100vh - 30px);
-  .hero-slider {
-    @include opacity(0.8);
-    //@include border-radius(1px);
-    //box-shadow: inset 33px 33px 80px #b2b2b2;
-    // width: 85%;
-    // height: 100%;
-    width: 100%;
-  height: calc(100vh - 60px);
-    .slick-list,
-    .slick-track,
-    .item,
-    .img-bg {
-      @include wh100;
-    }
-  }
-}
 
-    .caption {
-      @include absolute($t:50%, $l:0);
-      @include transform(translateY(-50%));
-      .hero {
-        margin-bottom: 4rem;
-        &.highlight span {
-          padding-left: 30px;
-          padding-right: 0;
-        }
-      }
-      .sub,
-      .btn {
-        margin-left: 35px;
-      }
-      .sub {
-        margin-bottom: 4rem;
-      }
 
-    }
 
-.img-bg {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-@include border-radius(1px);
-}
+
+
+
 
 .content-box {
   text-align: center;

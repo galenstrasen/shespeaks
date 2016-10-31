@@ -1,0 +1,24 @@
+.highlight {
+  span {
+    //display: block;
+    display: inline-block;
+    @include relative($z:10);
+
+    padding: 0 10px;
+    &::before {
+      content:'';
+      clear: both;
+      //display: block;
+      @include absolute($l:0, $b:-2px, $z:-1);
+      width: 100%;
+      //@include relative;
+      height: 25px;
+      background: $accent-color;
+    }
+
+  }
+  &.hero span::before {
+    height: 40px;
+  }
+
+}

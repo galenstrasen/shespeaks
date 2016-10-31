@@ -31,17 +31,17 @@ $accent-color: $chartruese;
 
 /* FONT SIZES */
 $hero: 6.5rem;
-$h1: 4rem;
+$h1: 5rem;
 $h2: 4rem;
-$h3: 20px;
-$h4: 20px;
+$h3: 1.3333rem;
+$h4: 1.3333rem;
 $h5: 14px;
 $p: 1.2rem;
 $lead: 1.125rem;
 $small: .875rem;
 
 /* FONT FAMILIES */
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:500,500i,700,700i,900,900i|Roboto+Mono:300,300i,400,400i,500,500i,700,700i);
+//@import url(https://fonts.googleapis.com/css?family=Playfair+Display:500,500i,700,700i,900,900i|Roboto+Mono:300,300i,400,400i,500,500i,700,700i);
 $playfair: 'Playfair Display', serif;
 $mono: 'Roboto Mono', sans-serif;
 
@@ -73,6 +73,7 @@ $fixed-w-sm: 750px;
 /* GUTTER */
 $gutter: 15px;
 $col: 100%/12;
+$gap: $gutter*2;
 
 /* SCREEN SIZE */
 $screen-tiny: 480px;
@@ -82,6 +83,9 @@ $screen-sm: 992px;
 $screen-md: 1200px;
 $screen-lg: 1350px;
 $screen-xl: 1400px;
+
+
+$border-style : 2px dashed $border-color;
 
 /* GLOBAL DIMENSIONS */
 // $menu-height: 50px;

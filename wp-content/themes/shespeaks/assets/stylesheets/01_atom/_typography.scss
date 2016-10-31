@@ -7,41 +7,93 @@ h1, .h1, h2, .h2, h3, .h3, .hero {
   @include spacing(33);
   color: $black;
   margin-bottom: 1.5rem;
+  @include respond-to($screen-xxs) {
+    @include spacing(20);
+  }
 }
 
 h4, .h4, h5, .h5, h6 {
   font-family: $mono;
   text-transform: uppercase;
-  @include spacing(800);
+  line-height: 1.5;
   color: $black;
   margin-bottom: 1.5rem;
 }
 
 h1,
 .h1 {
- font-size: $h1; /* 4em */
+  font-size: $h1; /* 4em */
+  @include respond-to($screen-sm) {
+    font-size: 4rem;
+  }
+  @include respond-to($screen-xxs) {
+    font-size: 3rem;
+    font-weight: $fw-bold;
+  }
+  @include respond-to($screen-tiny) {
+    font-size: 2.5rem;
+  }
 }
 
 h2,
 .h2 {
- font-size: $h2; /* 3em */
+  font-size: $h2; /* 4em */
+  @include respond-to($screen-sm) {
+    font-size: 3.5rem;
+  }
+  @include respond-to($screen-xxs) {
+    font-size: 2.5rem;
+    font-weight: $fw-bold;
+  }
+  // @include respond-to($screen-tiny) {
+  //   font-size: 2.5rem;
+  // }
 }
 
 h3,
 .h3 {
- font-size: $h3; /* 2.5em */
+  font-size: $h3; /* 2.5em */
+  @include respond-to($screen-sm) {}
+  @include respond-to($screen-xxs) {
+    font-weight: $fw-bold;
+  }
+  @include respond-to($screen-tiny) {}
 
 }
 
 h4,
 .h4 {
- font-size: $h4; /* 2em */
-//font-weight: $rm-bold;
+  font-size: $h4; /* 11.3 */
+  font-weight: $rm-reg;
+  @include spacing(800);
+  @include respond-to($screen-md) {
+    @include spacing(500);
+  }
+  @include respond-to($screen-xxs) {
+    font-size: 1.2rem;
+  }
 }
 
 h5,
 .h5 {
  font-size: $h5; /* 1.5em */
+  @include spacing(800);
+}
+
+.hero {
+  font-size: $hero; // 6.5rem
+  font-weight: $pf-black;
+  font-style: italic;
+  @include respond-to($screen-sm) {
+    font-size: 5rem;
+  }
+  @include respond-to($screen-xxs) {
+    font-size: $h1; //4rem
+    @include spacing(33);
+  }
+  @include respond-to($screen-tiny) {
+    font-size: 3.5rem;
+  }
 }
 a {
   color: $link-color;
@@ -57,6 +109,9 @@ a {
 }
 a {
   color: $black;
+  text-decoration: none;
+}
+a.underline {
   text-decoration: underline;
 }
 
@@ -73,13 +128,8 @@ p {
 .lead p {
   font-size: $lead;
 }
-ul { margin: 0; padding: 0px;}
-li {margin: 0px; padding: 0px; list-style: none;}
-.hero {
-  font-size: $hero;
-  font-weight: $pf-black;
-  font-style: italic;
-}
+
+
 .strong,
 b,
 strong {
@@ -90,66 +140,9 @@ i,
 em {
   font-style: italic;
 }
-.navbar-brand {
-  color: $white;
-  text-transform: uppercase;
-  font-weight: bold;
-  @include spacing(500);
-  font-size: 20px;
-  color: rgb(223, 128, 255);
-}
-.highlight {
-  span {
-    //display: block;
-    display: inline-block;
-    @include relative($z:10);
 
-    padding: 0 10px;
-    &::before {
-      content:'';
-      clear: both;
-      //display: block;
-      @include absolute($l:0, $b:-2px, $z:-1);
-      width: 100%;
-      //@include relative;
-      height: 25px;
-      background: $accent-color;
-    }
-
-  }
-  &.hero span::before {
-    height: 40px;
-  }
-
+hr {
+  border-top: 2px dashed $border-color;
 }
 
 
-.peach {
-  color: $peach;
-}
-
-.accent {
-  color: $accent-color;
-}
-.bg-accent {
-  background-color: $accent-color;
-}
-.magenta {
-  color: $magenta;
-}
-.bg-magenta {
-  background-color: $magenta;
-}
-.purp {
-  color: $purp;
-}
-.bg-purp {
-  background-color: $purp;
-}
-
-.aqua {
-  color: $aqua;
-}
-.bg-aqua {
-  background-color: $aqua;
-}

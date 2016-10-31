@@ -1,0 +1,130 @@
+
+.section-intro {
+  padding-top: 0;
+  height: 50vh;
+  margin-bottom: $gap*2;
+  @include respond-to($screen-xxs) {
+    height: 300px;
+  }
+  &.-full {
+    @include respond-max($screen-xs) {
+      padding-bottom: $gap;
+      height: calc(100vh - 30px);
+    }
+    @include respond-to($screen-xs) {
+      height: auto;
+    }
+    @include respond-to($screen-xxs) {
+      height: 300px;
+    }
+  }
+}
+
+.section-intro {
+  .slick-list,
+  .slick-track,
+  .item {
+    @include wh100;
+  }
+}
+
+.intro-vibes {
+  height: 50vh;
+  @include relative;
+  @include respond-to($screen-xxs) {
+    height: 300px;
+  }
+  // at xs screens - full section intro matches half
+  .-full & {
+    @include respond-max($screen-xs) {
+      height: calc(100vh - 60px);
+    }
+  }
+  &.-slider {
+    display: block;
+    @include respond-to($screen-xxs) {
+      display: none!important;
+    }
+  }
+  &.-sm-guy {
+    display: none;
+    @include respond-to($screen-xxs) {
+      display: block;
+    }
+  }
+}
+
+.intro-vibes .img-bg {
+  @include opacity(0.8);
+}
+
+
+.section-intro .img-bg {
+  width: $col*11;
+  margin-left: $col;
+  @include respond-to($screen-sm) {
+    width: $col*10;
+    margin-left: $col*2;
+  }
+  @include respond-to($screen-xxs) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.section-intro {
+  .overlay {
+    @include absolute($l:0, $b:0);
+  }
+  &.-full .overlay {
+    bottom: auto;
+    @include respond-max($screen-xs) {
+      top: 50%;
+      @include transform(translateY(-50%));
+    }
+    @include respond-to($screen-xs) {
+      top: 0;
+    }
+  }
+}
+
+.section-intro .overlay .hero-wrap {
+  @include respond-to($screen-xs) {
+    height: 50vh;
+    @include relative;
+    .hero {
+      @include absolute($b:0);
+    }
+  }
+  @include respond-to($screen-xxs) {
+    height: 300px;
+  }
+}
+
+.section-intro .overlay {
+  .highlight span {
+    padding-left: 30px;
+    padding-right: 0;
+  }
+  .sub,
+  .btn {
+    margin-left: 35px;
+  }
+  .sub {
+    margin-bottom: 4rem;
+  }
+}
+
+.section-intro {
+  &.-full .overlay .hero-wrap,
+  &.-half .overlay .hero {
+    margin-bottom: 4rem;
+  }
+}
+
+
+
+
+
+
+

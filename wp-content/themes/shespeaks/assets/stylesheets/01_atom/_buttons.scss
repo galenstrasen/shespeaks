@@ -41,7 +41,7 @@
   @include spacing(300);
   @include border-radius(0);
   @include relative($z:0);
-  @include transition(all .2s ease-out);
+  @include transition(all $transition);
   width: 250px;
   &::before,
   &::after {
@@ -57,7 +57,7 @@
     height: 0;
     background-color: $purp;
     @include transform(translate(-50%,-50%) rotate(45deg));
-    @include transition($transition);
+    @include transition(all $transition);
   }
   // background
   &::after {
@@ -67,6 +67,7 @@
   @include a-hover {
     @include spacing(350);
     color: $white;
+    border-color: transparent;
     &::before {
       height: 220px;
     }
