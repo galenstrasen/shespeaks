@@ -10,7 +10,7 @@
         <p>For the past 4 years I have had the pleasure of  working at TMBR - a rad little Creative Agency based in Jackson Hole, Wyoming. My focus has been in WordPress websites, where I am not only tasked with recreating beautiful web designs in code, but architecting custom content management systems tailored to the unique needs of each client. Want to know more? View the websites I consider to be my personal favorites, drop me a line, or check out the archives!  </p>
         <p><a href="mailto:gstrasen@gmail.com" class="btn">Get in Touch</a></p>
 
-        <p><a href="">Call me / Beep me: 917.816.5093</a><br/>
+        <p><a href="" class="underline">Call me / Beep me: 917.816.5093</a><br/>
         <a href=""> Connect on LinkedIn</a></p>
         <img src="<?php bloginfo('template_directory');?>/public/images/headshot.jpg" alt="Galen Strasen" class="offset-img bottom-right" />
       </div>
