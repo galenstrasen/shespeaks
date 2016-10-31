@@ -4,11 +4,10 @@
 
 <main class="pg-main" role="main">
 
-  <section class="pg-section section-intro">
-    <?php get_template_part( 'partials/intro' ); ?>
-  </section>
 
-  <section class="pg-section section-about">
+  <?php get_template_part( 'partials/03_organism/_intro-full' ); ?>
+
+  <section class="pg-section section-about" id="hello">
     <?php get_template_part( 'partials/about' ); ?>
   </section>
 
