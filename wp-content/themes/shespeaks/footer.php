@@ -1,5 +1,5 @@
 <footer id="footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
-	<div class="container">
+	<div class="container hidden">
 
 		<div class="row">
 			<div class="col-xs-12 col-sm-3">

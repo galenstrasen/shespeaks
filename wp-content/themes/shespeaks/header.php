@@ -38,7 +38,4 @@
 
   <div class="js-sitewrap site-wrap"> <!-- .body has opacity 0 for fade in effect on load -->
 
-    <header role="header">
-      <?php get_template_part( 'partials/03_organism/site-header' ); ?>
-    </header>
-    <!-- #header -->
+    <div id="top-of-the-world"></div>
