@@ -2,10 +2,12 @@
 // Template Name: CV
 ?>
 <?php get_header(); while ( have_posts() ) : the_post();?>
-<main class="pg-main" role="main">
+
 
 
 <?php get_template_part( 'partials/03_organism/_intro-half' ); ?>
+<?php get_template_part( 'partials/03_organism/navbar' ); ?>
+<main class="page-main" role="main">
 <section class="pg-section animation" data-animation="animation-fade-in-down" style="padding-top: 0;">
 <div class="captionx">
   <!-- <h2 class="hero highlight">
@@ -50,7 +52,7 @@
               <h5>May 2013 - Present</h5>
               <p>Worked both in-office and remotely with a small but agile team of Wyoming based creatives to drive both the discovery and development phases of the web project life cycle.</p>
               <p>Key responsibilities include:</p>
-              <ul class="plus -bulky">
+              <ul class="plus">
                 <li>Interfacing with client and team members to identify inital project needs, scope functionality requirements, map site architecture and provide recommendations on overall web strategy based on project goals and industry trends.</li>
                 <li>Building, testing, and maintaining standards-compliant, performance optimized, custom responsive WordPress websites from the ground up, while keeping in mind SEO best practices, browser idiosynchronicities and the needs of the end user (among other things).</li>
                 <li>Architecting intuitive and structurally sound content management systems that would allow the client full autonomy over their new site. </li>
@@ -66,7 +68,7 @@
             <h3>Front End Developer / SEO Specialist</h3>
             <h5>Jackson Hole, WY - June 2009 - May 2013</h5>
             <p>Worked in a variety of areas for a tiny web development shop in Jackson Hole, picking up skills quickly so as to competently wear any hat that needed to be worn in a given moment. </p>
-            <ul class="plus -bulky">
+            <ul class="plus">
               <li>Being prepared to interact with client web projects / web content as front end developer, content manager, designer or ground-up developer.</li>
               <li>Familiarizing myself with both WordPress and our custom .NET CMS and being ready willing and able to efficiently debug / contribute to code. </li>
               <li>Designed a comprehensive SEO package that I was tasked with executing as well. </li>
