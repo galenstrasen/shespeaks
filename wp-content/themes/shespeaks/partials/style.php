@@ -11,6 +11,22 @@
       <a class="btn">Button Default</a>
       <a class="btn btn-black">Button Black</a>
       <hr/>
+      <ul class="plus">
+              <li>7+ years working in, on and around websites.</li>
+              <li>Fluent in W3C compliant HTML/HTML5</li>
+              <li>Deep understanding of (and genuine love for) CSS3/CSS</li>
+              <li>Knowledge of object-oriented approach to CSS (currently obssessed with atomic design system)</li>
+              <li>Highly versed in responsive development including on-device remote debugging and testing across browsers and operating systems</li>
+              </ul>
+
+              <ul class="equal">
+              <li>7+ years working in, on and around websites.</li>
+              <li>Fluent in W3C compliant HTML/HTML5</li>
+              <li>Deep understanding of (and genuine love for) CSS3/CSS</li>
+              <li>Knowledge of object-oriented approach to CSS (currently obssessed with atomic design system)</li>
+              <li>Highly versed in responsive development including on-device remote debugging and testing across browsers and operating systems</li>
+              </ul>
+      <div class="hidden">
       <h3 class="accent">Accent</h3>
       <h3 class="aqua">Aqua</h3>
       <h3 class="magenta">Magenta</h3>
@@ -24,6 +40,7 @@
 <div class="swatch hidden" style="background-color:rgb(204, 204, 255);">4</div>
 <div class="swatch bg-magenta" >5</div>
 <div class="swatch bg-purp" >6</div>
+</div>
 </div>
     </div>
   </div>
