@@ -478,6 +478,28 @@ var SmoothScroll = function($) { // ----- static module
         init: _init
     };
 }(jQuery);
+// Galen Strasen
+// Date: 10.31.2016
+
+/**
+
+ */
+var StickyNav = function(element) { // ----- static module
+
+    var _init = function() {
+        var waypoints = $('.js-nav-guy').waypoint(function(direction) {
+                var totalPrice = $('.js-nav-guy');
+                    totalPrice.toggleClass('-fix');
+
+            });
+    };
+
+    // output/public
+    return {
+        init: _init
+    };
+}(jQuery);
+
 // TMBR Creative Agency
 // Author: Sarah Cleveland
 // Date: 9.25.2016
@@ -1274,22 +1296,22 @@ if (ischrome) {
 */
 var Control = function($) { // ----- static module
     // private var(s)
-    var sliderOptions = {
-        selector:           ".flexslider",
-        namespace:          "flex-",
-        animation:          "slide",
-        slideshow:          false, // auto play on load
-        slideshowSpeed:     2000,
-        animationSpeed:     500,
-        pauseOnHover:       true,
-        controlNav:         false, //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
-        directionNav:       true, //Boolean: Create navigation for previous/next navigation? (true/false)
-        prevText:           "Previous",
-        nextText:           "Next",
-        randomize:          false,
-        touch:              true,
-        video:              true
-    }
+    // var sliderOptions = {
+    //     selector:           ".flexslider",
+    //     namespace:          "flex-",
+    //     animation:          "slide",
+    //     slideshow:          false, // auto play on load
+    //     slideshowSpeed:     2000,
+    //     animationSpeed:     500,
+    //     pauseOnHover:       true,
+    //     controlNav:         false, //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
+    //     directionNav:       true, //Boolean: Create navigation for previous/next navigation? (true/false)
+    //     prevText:           "Previous",
+    //     nextText:           "Next",
+    //     randomize:          false,
+    //     touch:              true,
+    //     video:              true
+    // }
 
     // private method(s)
     var _init = function() {
@@ -1298,7 +1320,8 @@ var Control = function($) { // ----- static module
         //Throttle.init();
         SmoothScroll.init();
         Animated.init();
-        Slider.init(sliderOptions);
+        StickyNav.init();
+        //Slider.init(sliderOptions);
         SlickSlider.init();
         Lightbox.init();
     };
