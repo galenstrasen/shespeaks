@@ -13,6 +13,7 @@ body {
 
 .site-wrap {
 	@include opacity(0);
+	margin: $gap 0;
 }
 
 :active,
@@ -21,13 +22,13 @@ body {
 }
 
 ::-moz-selection {
-	// background: $black;
-	// color: $white;
+	background: $magenta;
+	color: $nice-yellow;
 }
 
 ::selection {
-	// background: $black;
-	// color: $white;
+	background: $magenta;
+	color: $nice-yellow;
 }
 
 ::-moz-focus-inner,
@@ -55,5 +56,38 @@ button::-moz-focus-inner {
 	background-color: turquoise;
 	color: $white;
 	font-weight: bold;
+}
+.logo {
+	font-size: 40px;
+	letter-spacing: 0;
+}
+.lil-circ {
+	height: 22px;
+    width: 22px;
+    top: -2px;
+    position: relative;
+    background: pink;
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 50%;
+    &::after {
+    	content: '+';
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 40px;
+    bottom: -25px;
+    left: -4px;
+    line-height: 20px;
+    height: 22px;
+    position: absolute;
+    width: 22px;
+    background: yellow;
+    }
+    &.alt {
+    	&::after {
+    		bottom: 0;
+    		left: auto;
+    		right: -25px;
+    	}
+    }
 }
 
