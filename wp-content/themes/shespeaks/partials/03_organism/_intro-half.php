@@ -2,7 +2,7 @@
 <section class="pg-section section-intro -half">
 
   <div class="cv-hero intro-vibes">
-    <div class="img-bg animation" data-animation="animation-fade-in-down" style="background-image: url('<?php bloginfo('template_directory');?>/public/images/water1.jpg');"></div>
+    <div class="img-bg animation" data-animation="animation-fade-in-down" data-delay="100" style="background-image: url('<?php bloginfo('template_directory');?>/public/images/water1.jpg');"></div>
 
     <div class="overlay">
       <h1 class="hero highlight animation" data-animation="animation-fade-in-left">

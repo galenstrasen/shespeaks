@@ -4,7 +4,7 @@
   <!-- <div class="container-fluid no-gutter">
     <div class="row">
       <div class="col-md-11 col-md-offset-1"> -->
-        <div class="js-hero-slider intro-vibes -slider">
+        <div class="js-hero-slider intro-vibes -slider animation" data-animation="animation-fade-in-down" data-delay="100">
           <div class="item">
             <div class="img-bg" style="background-image: url('<?php bloginfo('template_directory');?>/public/images/water1.jpg');"></div>
           </div><!-- /item -->
@@ -18,8 +18,8 @@
 <div class="intro-vibes -sm-guy">
     <div class="img-bg" style="background-image: url('<?php bloginfo('template_directory');?>/public/images/water1.jpg');"></div>
     </div>
-  <div class="captionx overlay">
-    <div class="hero-wrap">
+  <div class="overlay" >
+    <div class="hero-wrap animation" data-animation="animation-fade-in-left">
     <h2 class="hero highlight">
       <span>She</span><br/>
       <span>Speaks in</span><br/>
