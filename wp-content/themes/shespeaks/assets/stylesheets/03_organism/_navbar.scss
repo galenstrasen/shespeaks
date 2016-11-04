@@ -1,0 +1,104 @@
+.section-nav {
+  margin-bottom: $gap*4;
+}
+
+.navbar {
+  border: medium none;
+  min-height: 0;
+  background: url('../../public/images/pat-the-bunny.svg') repeat top left $white;
+  padding: $gap;
+  margin-bottom: 0;
+  @include transition(all ease-in .2s);
+  &.-fix {
+    @include fixed($t:0,$z:999);
+    top: 0;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.navbar {
+  .brand {
+    display: none;
+    float: left;
+    @include absolute($l:-100px);
+  }
+  &.-fix {
+    .brand {
+      display: inline-block;
+      @include animation(animation,cuties .3s forwards $trans-time .3s);
+    }
+  }
+  .init {
+    background: $action-color;
+    margin-bottom: 0;
+    line-height: 40px;
+    font-size: 2rem;
+    font-style: italic;
+    text-transform: lowercase;
+    @include spacing(200);
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@include keyframes(cuties) {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.navbar {
+  .links {
+    text-align: center;
+    //height: 50px;
+    li {
+      display: inline-block;
+      margin-right: 30px;
+      line-height: 50px;
+      //height: 50px;
+      margin-bottom: 0;
+      &::before {
+        z-index: 2;
+      }
+      a {
+        @include relative($z:1);
+        display: inline-block;
+        //overflow: hidden;
+        line-height: 50px;
+        &::after {
+          content: '';
+          height: 0;
+          width: calc(100% + 40px);
+          background: $action-color;
+          @include absolute($l:-30px,$b:10px, $z:-1);
+          @include transition(all $transition);
+        }
+        &:hover {
+          color: $black;
+          &::after {
+
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+  &.-fix {
+    li a {
+      &::after {
+        bottom: 0;
+      }
+      &:hover {
+        &::after {
+          bottom: 0;
+          height: 10px;
+        }
+      }
+    }
+  }
+}
