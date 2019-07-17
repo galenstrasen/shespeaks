@@ -9017,6 +9017,7 @@ hr {
   text-transform: uppercase;
   color: #000;
   display: inline-block;
+  background-clip: padding-box;
   padding: 15px 25px;
   font-weight: 500;
   text-decoration: none;
